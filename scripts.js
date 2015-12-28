@@ -1,0 +1,1 @@
+console.log("width of window ", $(window).width());
