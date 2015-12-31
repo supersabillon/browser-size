@@ -1,2 +1,4 @@
 # browser-size
-Size of browser
+Shows the size of the browser
+
+still in progress...
