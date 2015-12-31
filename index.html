@@ -8,14 +8,42 @@
 		body {
 			background-color: #3EA9F5;
 			color: #fff;
+			font-family: Arial;
+			font-size: 24px;
 		}
+		dl {
+		  padding: 0.5em;
+		  margin: 0;
+		}
+		dt {
+		  float: left;
+		  clear: left;
+		  font-weight: bold;
+		}
+		dd {
+		  padding: 0 0 0.8em 0;
+		}
+	 .centered {
+	   position: fixed;
+	   top: 50%;
+	   left: 50%;
+	   -webkit-transform: translate(-50%, -50%);
+	   -ms-transform: translate(-50%, -50%);
+	   transform: translate(-50%, -50%);
+	 }
 	</style>
 </head>
 <body>
-	
-	<h1>Browser Size</h1>
+
+	<dl class="centered">
+		<dt>W:</dt>
+		<dd><span id="width"></span> px</dd>
+		<dt>H:</dt>
+		<dd><span id="height"></span> px</dd>
+	</dl>
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="scripts.js"></script>	
+<script src="scripts.js"></script>
+
 </body>
 </html>

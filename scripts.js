@@ -1,6 +1,10 @@
-console.log("width of window ", $(window).width());
+var browserSize = function() {
+  var $width = $('#width').text($(window).width()),
+      $height = $('#height').text($(window).height());
+};
+
+browserSize();
 
 $(window).resize(function() {
-  console.log("W", $(window).width());
-  console.log("H ", $(window).height());
+  browserSize();
 });
