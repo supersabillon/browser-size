@@ -2,29 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>browser size</title>
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<style>
 		body {
 			background-color: #3EA9F5;
 			color: #fff;
-			font-family: Arial;
 			font-size: 24px;
 			font-family: 'Inconsolata', Arial ;
 		}
-		dl {
-		  padding: 0.5em;
-		  margin: 0;
-		}
-		dt {
-		  float: left;
-		  clear: left;
-		  font-weight: bold;
-		}
-		dd {
-		  padding: 0 0 0.8em 0;
-		}
+
 	 .centered {
 	   position: fixed;
 	   top: 50%;
@@ -33,16 +23,36 @@
 	   -ms-transform: translate(-50%, -50%);
 	   transform: translate(-50%, -50%);
 	 }
+
+	 .size {
+	 	color: #0c8ae3;
+	 }
+
+	 .size > span {
+	 	color: #fff;
+	 }
+
+	 .size a {
+	 	font-size: 20px;
+	 	color: #0c8ae3;
+	 }
+
+	 .size a:hover {
+	 	color: #0a76c3;
+	 }
+
 	</style>
 </head>
 <body>
 
-	<dl class="centered">
-		<dt>Width:</dt>
-		<dd><span id="width"></span>px</dd>
-		<dt>Height:</dt>
-		<dd><span id="height"></span>px</dd>
-	</dl>
+	<section class="centered">
+		<div class="size">
+			<strong>Width:</strong> <span id="width"></span>px <a title="Copy to Clipboard" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
+		</div>
+		<div class="size">
+			<strong>Height:</strong> <span id="height"></span>px <a title="Copy to Clipboard" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
+		<div>
+	</section>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="scripts.js"></script>
