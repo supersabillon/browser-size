@@ -15,31 +15,44 @@
 			font-family: 'Inconsolata', Arial ;
 		}
 
-	 .centered {
-	   position: fixed;
-	   top: 50%;
-	   left: 50%;
-	   -webkit-transform: translate(-50%, -50%);
-	   -ms-transform: translate(-50%, -50%);
-	   transform: translate(-50%, -50%);
-	 }
+		a {
+			color: #0c8ae3;
+		}
 
-	 .size {
-	 	color: #0c8ae3;
-	 }
+		a:hover {
+			color: #0a76c3;
+		}
 
-	 .size > span {
-	 	color: #fff;
-	 }
+		.centered {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		}
 
-	 .size a {
-	 	font-size: 20px;
-	 	color: #0c8ae3;
-	 }
 
-	 .size a:hover {
-	 	color: #0a76c3;
-	 }
+		.foot {
+			color: #0c8ae3;;
+			font-size: 14px;
+			position: fixed;
+			bottom: 10px;
+			left: 10px;
+
+		}
+
+		.size {
+			color: #0c8ae3;
+		}
+
+		.size > span {
+			color: #fff;
+		}
+
+		.size a {
+			font-size: 20px;	
+		}
 
 	</style>
 </head>
@@ -53,6 +66,10 @@
 			<strong>Height:</strong> <span id="height"></span>px <a title="Copy to Clipboard" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
 		<div>
 	</section>
+
+	<footer class="foot text-center">
+		by <a href="https://twitter.com/supersabillon">Joel Sabillón</a>
+	</footer>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="scripts.js"></script>
