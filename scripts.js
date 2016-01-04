@@ -3,8 +3,16 @@ var browserSize = function() {
       $height = $('#height').text($(window).height());
 };
 
-browserSize();
-
 $(window).resize(function() {
   browserSize();
+});
+
+
+$(function() {
+    browserSize();
+
+    $('.copy').click(function(event) {
+    	event.preventDefault();
+    	console.log('target is ' + $(this).prev().text());
+	});
 });
