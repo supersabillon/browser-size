@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>browser size</title>
-	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<style>
@@ -13,14 +13,6 @@
 			color: #fff;
 			font-size: 24px;
 			font-family: 'Inconsolata', Arial ;
-		}
-
-		a {
-			color: #0c8ae3;
-		}
-
-		a:hover {
-			color: #0a76c3;
 		}
 
 		.centered {
@@ -55,13 +47,21 @@
 			font-size: 20px;
 		}
 
+		.copy {
+			color: #0c8ae3;
+			display: inline-block;
+		}
+
+		.copy.zeroclipboard-is-hover { color: #0a76c3; }
+		.copy.zeroclipboard-is-active { color: #0c8ae3; }
+
 	</style>
 </head>
 <body>
 
 	<section class="centered">
 		<div class="size">
-			<strong>Width:</strong> <span id="width"></span>px <a title="Copy to Clipboard" class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
+			<strong>Width:</strong> <span id="width"></span>px <a title="Copy to Clipboard" data-clipboard-text="Testing testing!" class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
 		</div>
 		<div class="size">
 			<strong>Height:</strong> <span id="height"></span>px <a title="Copy to Clipboard" class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
@@ -72,8 +72,8 @@
 		by <a href="https://twitter.com/supersabillon">Joel Sabillón</a>
 	</footer>
 
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
 <script src="scripts.js"></script>
 
 <script>
