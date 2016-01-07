@@ -1,6 +1,10 @@
+var w, h;
+
 var browserSize = function() {
-  var $width = $('#width').text($(window).width()),
-      $height = $('#height').text($(window).height());
+  w = $(window).width(), h = $(window).height();
+
+  var $width = $('#width').text(w),
+      $height = $('#height').text(h);
 };
 
 $(window).resize(function() {
@@ -8,30 +12,22 @@ $(window).resize(function() {
 });
 
 
-$(function() {
-    browserSize();
+browserSize();
 
-    // $('.copy').click(function(event) {
-    // 	//event.preventDefault();
-    // 	//console.log('target is ' + $(this).prev().text());
-	   // });
+$('.copy').each(function(index) {
 
-    var client = new ZeroClipboard($('.copy'));
+    var clip = new ZeroClipboard(this),
+        self = $(this);
 
-    client.on( 'ready', function(event) {
-      console.log( 'movie is loaded' );
+    clip.on('ready', function() {
+      clip.on( 'copy', function(e) {
+        var txt = (index == 0) ? w + 'px' : h + 'px';
+        e.clipboardData.setData('text/plain', txt);
+      });
 
-      client.on( 'copy', function(event) {
-        event.clipboardData.setData('text/plain', event.target.innerHTML);
-      } );
+      clip.on('aftercopy', function(e) {
+        console.log('copied to clipboard ');
+      })
 
-      client.on( 'aftercopy', function(event) {
-        console.log('Copied text to clipboard: ' + event.data['text/plain']);
-      } );
-    } );
-
-    client.on( 'error', function(event) {
-      console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
-      ZeroClipboard.destroy();
-    } );
+    });
 });

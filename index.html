@@ -15,6 +15,11 @@
 			font-family: 'Inconsolata', Arial ;
 		}
 
+		a:focus {
+			color: inherit;
+			outline: none;
+		}
+
 		.centered {
 		position: fixed;
 		top: 50%;
@@ -53,7 +58,7 @@
 		}
 
 		.copy.zeroclipboard-is-hover { color: #0a76c3; }
-		.copy.zeroclipboard-is-active { color: #0c8ae3; }
+		.copy.zeroclipboard-is-active { color: #0c8ae3;}
 
 	</style>
 </head>
@@ -61,7 +66,7 @@
 
 	<section class="centered">
 		<div class="size">
-			<strong>Width:</strong> <span id="width"></span>px <a title="Copy to Clipboard" data-clipboard-text="Testing testing!" class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
+			<strong>Width:</strong> <span id="width"></span>px <a title="Copy to Clipboard"  class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
 		</div>
 		<div class="size">
 			<strong>Height:</strong> <span id="height"></span>px <a title="Copy to Clipboard" class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
