@@ -16,8 +16,7 @@ browserSize();
 
 $('.copy').each(function(index) {
 
-    var clip = new ZeroClipboard(this),
-        self = $(this);
+    var clip = new ZeroClipboard(this);
 
     clip.on('ready', function() {
       clip.on( 'copy', function(e) {
@@ -26,7 +25,9 @@ $('.copy').each(function(index) {
       });
 
       clip.on('aftercopy', function(e) {
-        console.log('copied to clipboard ');
+        $(".js-alert").fadeIn(500, function(){
+          $(this).fadeOut(1000);
+        });
       })
 
     });

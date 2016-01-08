@@ -29,6 +29,20 @@
 		transform: translate(-50%, -50%);
 		}
 
+		.copied-alert  {
+			display: none;
+			position: fixed;
+			left: 50%;
+			top: -50px;
+			width: 200px;
+			margin-left: -100px;
+			text-align: center;
+			z-index: 3000;
+			color: #fff;
+			background-color: #0c8ae3;
+			font-size: 14px;
+			line-height: 2;
+		}
 
 		.foot {
 			color: #0c8ae3;;
@@ -63,8 +77,8 @@
 	</style>
 </head>
 <body>
-
 	<section class="centered">
+		<div class="copied-alert js-alert" role="alert">Copied to Clipboard!</div>
 		<div class="size">
 			<strong>Width:</strong> <span id="width"></span>px <a title="Copy to Clipboard"  class="copy" href="#"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
 		</div>
