@@ -1,28 +1,22 @@
 'use strict';
 
-var w, h;
+var $win = $(window),
+    $width = $('#width').text($win.width()),
+    $height = $('#height').text($win.height());
 
-var browserSize = function() {
-  w = $(window).width(), h = $(window).height();
-
-  var $width = $('#width').text(w),
-      $height = $('#height').text(h);
-};
-
-$(window).resize(function() {
-  browserSize();
+$win.resize(function() {
+  $width.text($win.width()),
+  $height.text($win.height());
 });
 
+$('.copy').each(function() {
 
-browserSize();
-
-$('.copy').each(function(index) {
-
-    var clip = new ZeroClipboard(this);
+    var clip = new ZeroClipboard(this),
+        _ = $(this);
 
     clip.on('ready', function() {
       clip.on( 'copy', function(e) {
-        var txt = (index == 0) ? w + 'px' : h + 'px';
+        var txt = _.siblings('span').text() + 'px';
         e.clipboardData.setData('text/plain', txt);
       });
 
