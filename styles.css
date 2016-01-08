@@ -1,8 +1,16 @@
 body {
   background-color: #3EA9F5;
-  color: #fff;
   font-size: 24px;
+  color: #0c8ae3;
   font-family: 'Inconsolata', Arial ;
+}
+html,body {
+  height:100%;
+  margin: 0;
+}
+
+a:link, a:visited {
+    color: #0c8ae3;
 }
 
 a:focus {
@@ -10,20 +18,39 @@ a:focus {
   outline: none;
 }
 
+p {
+  margin: 0;
+}
+
 .centered {
-position: fixed;
-top: 50%;
-left: 50%;
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
+  text-align: center;
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.size {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-size: 40px;
+  font-size:10vmin;
+  position: relative;
+}
+
+.size p > span {
+  color: #fff;
+}
+
+.size a {
+  text-decoration: none;
 }
 
 .copied-alert  {
   display: none;
   position: fixed;
   left: 50%;
-  top: -50px;
+  top: 10%;
   width: 200px;
   margin-left: -100px;
   text-align: center;
@@ -35,25 +62,17 @@ transform: translate(-50%, -50%);
 }
 
 .foot {
-  color: #0c8ae3;;
   font-size: 14px;
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  left: 0;
+  text-align: center;
   font-weight: bold;
-
+  width: 100%;
 }
 
-.size {
-  color: #0c8ae3;
-}
-
-.size > span {
-  color: #fff;
-}
-
-.size a {
-  font-size: 20px;
+.foot a:link, .foot a:visited {
+  color: #0a76c3;
 }
 
 .copy {
