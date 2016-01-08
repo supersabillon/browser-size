@@ -1,0 +1,65 @@
+body {
+  background-color: #3EA9F5;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Inconsolata', Arial ;
+}
+
+a:focus {
+  color: inherit;
+  outline: none;
+}
+
+.centered {
+position: fixed;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.copied-alert  {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: -50px;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 3000;
+  color: #fff;
+  background-color: #0c8ae3;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.foot {
+  color: #0c8ae3;;
+  font-size: 14px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+
+}
+
+.size {
+  color: #0c8ae3;
+}
+
+.size > span {
+  color: #fff;
+}
+
+.size a {
+  font-size: 20px;
+}
+
+.copy {
+  color: #0c8ae3;
+  display: inline-block;
+}
+
+.copy.zeroclipboard-is-hover { color: #0a76c3; }
+.copy.zeroclipboard-is-active { color: #0c8ae3;}
