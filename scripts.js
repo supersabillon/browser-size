@@ -1,3 +1,5 @@
+'use strict';
+
 var w, h;
 
 var browserSize = function() {
