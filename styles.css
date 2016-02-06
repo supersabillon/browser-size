@@ -69,10 +69,16 @@ p {
   text-align: center;
   font-weight: bold;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .foot a:link, .foot a:visited {
+  text-decoration: none;
   color: #0a76c3;
+}
+
+.foot a:hover {
+  border-bottom: 1px solid #0c8ae3;
 }
 
 .copy {
