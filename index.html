@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>browser size - get width and height of browser - get browser size - what's my browser size</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>browser size - get width and height of browser - get browser size - what's my browser size</title>
   <meta title="description" content="A simple site that detects browser width and height with helpful copy-to-clipboard buttons.">
   <meta name="keywords" content="browser size, browser-size, browsersize, browser, width, height, design, simple, minimal, web developer, web designer">
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link href='//fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href='//fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-	<section class="centered">
-		<div class="size">
-			<div class="copied-alert js-alert" role="alert">Copied to Clipboard!</div>
-			<p><strong>width:</strong> <span id="width"></span>px; <a title="Copy to Clipboard"  class="copy" href="#"><span>&#9733;</span></a></p>
-			<p><strong>height:</strong> <span id="height"></span>px; <a title="Copy to Clipboard" class="copy" href="#"><span>&#9733;</span></a></p>
-		</div>
-	</section>
+  <header>
+    <h1>get browser size</h1>
+  </header>
+  <section class="centered">
+    <div class="size">
+      <div class="copied-alert js-alert" role="alert">Copied to Clipboard!</div>
+      <p><strong>width:</strong> <span id="width"></span>px; <a title="Copy to Clipboard" class="copy" href="#"><span>&#9733;</span></a></p>
+      <p><strong>height:</strong> <span id="height"></span>px; <a title="Copy to Clipboard" class="copy" href="#"><span>&#9733;</span></a></p>
+    </div>
+  </section>
 
-	<footer class="foot">
-<a href="https://twitter.com/supersabillon">by Joel Sabillón</a>
-	</footer>
+  <footer class="foot">
+    <a href="https://twitter.com/supersabillon">by Joel Sabillón</a>
+  </footer>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
-<script src="scripts.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
+
 </html>
