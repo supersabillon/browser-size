@@ -1,4 +1,5 @@
-'use strict';
+$(function() {
+  'use strict';
 
 var $win = $(window),
     $width = $('#width').text($win.width()),
@@ -27,6 +28,7 @@ $('.copy').each(function() {
       })
 
     });
+});
 });
 
 
