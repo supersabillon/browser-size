@@ -1,34 +1,25 @@
 $(function() {
   'use strict';
 
-var $win = $(window),
+  var $win = $(window),
     $width = $('#width').text($win.width()),
     $height = $('#height').text($win.height());
 
-$win.resize(function() {
-  $width.text($win.width()),
-  $height.text($win.height());
-});
+  $win.resize(function() {
+    $width.text($win.width()),
+    $height.text($win.height());
+  });
 
-$('.copy').each(function() {
+  $('.copy').each(function() {
+    var clipboard = new Clipboard(this);
 
-    var clip = new ZeroClipboard(this),
-        _ = $(this);
-
-    clip.on('ready', function() {
-      clip.on( 'copy', function(e) {
-        var txt = _.siblings('span').text() + 'px';
-        e.clipboardData.setData('text/plain', txt);
+    clipboard.on('success', function(e) {      
+      e.clearSelection();
+      $(".js-alert").fadeIn(500, function(){
+        $(this).fadeOut(1000);
       });
-
-      clip.on('aftercopy', function(e) {
-        $(".js-alert").fadeIn(500, function(){
-          $(this).fadeOut(1000);
-        });
-      })
-
     });
-});
+  });
 });
 
 
