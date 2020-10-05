@@ -1,16 +1,18 @@
 body {
-  background-color: #3EA9F5;
+  background-color: #3ea9f5;
   font-size: 24px;
-  color: #0c8ae3;
-  font-family: 'Inconsolata', Arial ;
+  color: #fff;
+  font-family: "Inconsolata", Arial;
 }
-html,body {
-  height:100%;
+html,
+body {
+  height: 100%;
   margin: 0;
 }
 
-a:link, a:visited {
-    color: #0c8ae3;
+a:link,
+a:visited {
+  color: #0c8ae3;
 }
 
 a:focus {
@@ -46,7 +48,7 @@ p {
   vertical-align: middle;
   line-height: 1.5;
   font-size: 40px;
-  font-size:10vmin;
+  font-size: 10vmin;
   position: relative;
 }
 
@@ -58,7 +60,7 @@ p {
   text-decoration: none;
 }
 
-.copied-alert  {
+.copied-alert {
   display: none;
   position: fixed;
   left: 50%;
@@ -84,7 +86,8 @@ p {
   text-transform: uppercase;
 }
 
-.foot a:link, .foot a:visited {
+.foot a:link,
+.foot a:visited {
   text-decoration: none;
   color: #0a76c3;
 }
@@ -98,5 +101,9 @@ p {
   display: inline-block;
 }
 
-.copy.zeroclipboard-is-hover { color: #0a76c3; }
-.copy.zeroclipboard-is-active { color: #0c8ae3;}
+.copy.zeroclipboard-is-hover {
+  color: #0a76c3;
+}
+.copy.zeroclipboard-is-active {
+  color: #0c8ae3;
+}
