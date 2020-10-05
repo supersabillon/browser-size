@@ -22,47 +22,31 @@
       type="text/css"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
 
   <body>
-    <header>
-      <h1>get browser size</h1>
-    </header>
-    <section class="centered">
-      <div class="size">
-        <div class="copied-alert js-alert" role="alert">
-          Copied to Clipboard!
+    <div class="container">
+      <header>
+        <h1>get browser size</h1>
+      </header>
+      <section>
+        <div class="getSize">
+          width: <span id="width"></span>px;
+          <button onclick="copyToClipboard('width')">Copy Width</button>
         </div>
-        <p>
-          <strong>width:</strong> <span id="width"></span>px;
-          <a
-            title="Copy to Clipboard"
-            data-clipboard-target="#width"
-            class="copy"
-            href="#"
-            ><span>&#9733;</span></a
-          >
-        </p>
-        <p>
-          <strong>height:</strong> <span id="height"></span>px;
-          <a
-            title="Copy to Clipboard"
-            data-clipboard-target="#height"
-            class="copy"
-            href="#"
-            ><span>&#9733;</span></a
-          >
-        </p>
-      </div>
-    </section>
+        <div class="getSize">
+          height: <span id="height"></span>px;
+          <button onclick="copyToClipboard('height')">Copy Height</button>
+        </div>
+      </section>
 
-    <footer class="foot">
-      <a href="https://twitter.com/supersabillon">by Joel Sabillón</a>
-    </footer>
-
+      <footer class="foot">
+        <a href="https://twitter.com/supersabillon">by Joel Sabillón</a>
+      </footer>
+    </div>
+    <div class="copied-alert js-alert" role="alert">Copied to Clipboard!</div>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="assets/clipboard.min.js"></script>
     <script src="assets/scripts.js"></script>
   </body>
 </html>
