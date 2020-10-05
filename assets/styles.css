@@ -1,5 +1,5 @@
 body {
-  background-color: #085891;
+  background-color: #14213d;
   font-size: 24px;
   color: #fff;
   font-family: "Inconsolata", Arial;
@@ -12,6 +12,17 @@ body {
 
 h1 {
   text-align: center;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #fca311;
 }
 
 .container {
@@ -41,38 +52,51 @@ footer {
   text-decoration: none;
 }
 
-footer a:link,
-footer a:visited {
-  text-decoration: none;
-  color: #eee;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
 .getSize {
-  font-size: 8vmin;
+  font-size: 9vmin;
   color: #fff;
   margin-bottom: 8px;
 }
 
 .getSize span {
   font-weight: 700;
-  color: #fcfdaf;
+  color: #fca311;
 }
 
 .copied-alert {
   display: none;
   position: fixed;
   left: 50%;
-  top: 20%;
+  top: 25%;
   width: 200px;
   margin-left: -100px;
   text-align: center;
   z-index: 3000;
-  color: #fff;
-  background-color: #0c8ae3;
+  color: #000000;
+  background: #fca311;
   font-size: 14px;
   line-height: 2;
+}
+
+button {
+  vertical-align: middle;
+  border: none;
+  background: #e5e5e5;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+  line-height: 2;
+  padding: 0.3em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+  background: #fca311;
+}
+
+button:active {
+  background: #fca311ab;
 }
